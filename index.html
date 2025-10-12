@@ -1,42 +1,90 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CALCULATOR</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="calculator">
-      <div class="display">
-        <input type="text" placeholder="0" id="input" disabled />
-      </div>
-      <div class="button">
-        <input type="button" value="AC" id="clear" />
-        <input type="button" value="DEL" id="erase" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Add this heading section -->
+    <header class="calculator-header">
+        <h1><i class="fas fa-calculator"></i> OMath Calculator</h1>
+        <p>Beautiful & Powerful Calculator</p>
+    </header>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" placeholder="0" id="input" disabled />
+            </div>
+            <div class="button-grid">
+                <input type="button" value="AC" id="clear" class="function-btn" />
+                <input type="button" value="DEL" id="erase" class="function-btn" />
+                <input type="button" value="%" class="operator-btn" />
+                <input type="button" value="/" class="operator-btn" />
 
-        <input type="button" value="/" class="input-button" />
-        <input type="button" value="*" class="input-button" />
+                <input type="button" value="7" class="number-btn" />
+                <input type="button" value="8" class="number-btn" />
+                <input type="button" value="9" class="number-btn" />
+                <input type="button" value="*" class="operator-btn" />
 
-        <input type="button" value="7" class="input-button" />
-        <input type="button" value="8" class="input-button" />
-        <input type="button" value="9" class="input-button" />
-        <input type="button" value="-" class="input-button" />
+                <input type="button" value="4" class="number-btn" />
+                <input type="button" value="5" class="number-btn" />
+                <input type="button" value="6" class="number-btn" />
+                <input type="button" value="-" class="operator-btn" />
 
-        <input type="button" value="6" class="input-button" />
-        <input type="button" value="5" class="input-button" />
-        <input type="button" value="4" class="input-button" />
-        <input type="button" value="+" class="input-button" />
+                <input type="button" value="1" class="number-btn" />
+                <input type="button" value="2" class="number-btn" />
+                <input type="button" value="3" class="number-btn" />
+                <input type="button" value="+" class="operator-btn" />
 
-        <input type="button" value="1" class="input-button" />
-        <input type="button" value="2" class="input-button" />
-        <input type="button" value="3" class="input-button" />
-
-        <input type="button" value="=" id="equal" />
-        <input type="button" value="0" class="input-button" />
-        <input type="button" value="." class="input-button" />
-      </div>
+                <input type="button" value="0" class="number-btn zero-btn" />
+                <input type="button" value="." class="number-btn" />
+                <input type="button" value="=" id="equal" class="equals-btn" />
+            </div>
+        </div>
     </div>
+     <!-- Footer Section -->
+    <footer class="calculator-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-rocket"></i> Features</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Modern Glass Design</li>
+                    <li><i class="fas fa-check"></i> Percentage Operations</li>
+                    <li><i class="fas fa-check"></i> Keyboard Support</li>
+                    <li><i class="fas fa-check"></i> Responsive Design</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3><i class="fas fa-share-alt"></i> Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/Ofentsefefe" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ofentse-mathosi-8b4321331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3><i class="fas fa-info-circle"></i> About</h3>
+                <p>A modern calculator built with pure HTML, CSS & JavaScript. Perfect for everyday calculations with style.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ofentse Mathosi, Made with <i class="fas fa-heart"></i> for everyone</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
+
