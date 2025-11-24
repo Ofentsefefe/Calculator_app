@@ -7,5 +7,5 @@ This is a calculator that can perfom basic mathematical operations to solve prob
 | Frontend | Backend|
 |----------|----------|
 |Java Script, HTML, CSS | Python| 
-# IDE: 
+## IDE: 
 Visual Studio code
